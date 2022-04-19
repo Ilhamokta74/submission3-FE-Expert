@@ -1,0 +1,33 @@
+/* Medium devices (landscape tablets, 768px atau di atasnya) */
+@media only screen and (min-width: 768px) {
+    #menu-button, #close-button {
+        display: none;
+    }
+    #navbar .nav {
+        display: block;
+    }
+    #sidebar {
+        display: none;
+    }
+    .detail-review, .menus, .post-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large devices (laptops, 992px atau di atasnya) */
+@media only screen and (min-width: 992px) {
+    .detail-review, .post-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container {
+        /* max-width: 1200px; */
+        margin: auto;
+    }
+    .post-detail .post-thumbnail img {
+        height: 500px;
+    }
+    #hero {
+        background: linear-gradient( 0deg, rgb( 0 0 0 / 50%), rgb( 0 0 0 / 50%)), url(../public/images/heros/hero-image_2.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
