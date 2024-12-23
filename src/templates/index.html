@@ -33,7 +33,7 @@
           <button id="close-button" aria-label="close-navigation-menu"><i class="fas fa-times"></i></button>
           <a class="nav-link" href="#/home">Home</a>
           <a class="nav-link" href="#/favorite">Favorite</a>
-          <a class="nav-link" href="https://github.com/Ilhamokta74">About</a>
+          <a class="nav-link" href="https://github.com/Ilhamokta74?tab=repositories">About</a>
         </div>
       </nav>
     </div>
@@ -41,8 +41,14 @@
   <main id="main-content">
   </main>
   <footer id="footer">
-    Copyright © 2022 - Restaurant Apps
+    Copyright © <span id="year"></span> - Restaurant Apps
   </footer>
+
+  <script>
+    const year = new Date().getFullYear()
+
+    document.getElementById("year").textContent = year;
+  </script>
 </body>
 
 </html>
